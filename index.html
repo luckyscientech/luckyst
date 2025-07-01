@@ -1,83 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>제조사 안내</title>
-  <style>
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    .nav-buttons {
-      background-color: #f2f2f2;
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .nav-buttons a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .nav-buttons a:hover {
-      background-color: #0056b3;
-    }
-
-    .container {
-      padding: 60px 20px;
-    }
-
-    .message {
-      font-size: 18px;
-      color: #333;
-      margin: 10px 0 30px;
-      line-height: 1.6;
-    }
-
-    .contact {
-      margin-top: 40px;
-      font-size: 16px;
-      color: #444;
-      line-height: 1.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>홈페이지 리뉴얼중</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .logo {
+            margin-bottom: 30px;
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+        .contact {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="nav-buttons">
-    <a href="https://sterile.com" target="_blank">VAI</a>
-    <a href="https://girton.com" target="_blank">Girton</a>
-    <a href="https://thoren.com" target="_blank">Thoren</a>
-    <a href="https://www.innovive.com" target="_blank">Innovive</a>
-  </div>
-
-  <div class="container">
-    <div class="message">
-      홈페이지 리뉴얼중입니다.<br>
-      로고를 클릭하시면 제조사 사이트로 이동합니다.
+    <!-- 🔗 로고 클릭 시 제조사 사이트로 이동 -->
+    <div class="logo">
+        <a href="https://www.lstbest.co.kr" target="_blank">
+            <img src="ci_logo.png" alt="LST CI">
+        </a>
     </div>
+
+    <h1>홈페이지 리뉴얼중입니다</h1>
+    <p>로고를 클릭하시면 제조사 사이트로 이동합니다.</p>
 
     <div class="contact">
-      제품 문의는 아래 연락처를 참조 부탁드립니다.<br>
-      E-mail : luckyst1@lstbest.co.kr<br>
-      TEL : 032 623 0899<br>
-      FAX : 032 623 0898
+        <p><strong>제품 문의는 아래 연락처를 참조 부탁드립니다.</strong></p>
+        <p>E-mail : <a href="mailto:luckyst1@lstbest.co.kr">luckyst1@lstbest.co.kr</a></p>
+        <p>TEL : 032-623-0899</p>
+        <p>FAX : 032-623-0898</p>
     </div>
-  </div>
-
 </body>
 </html>
