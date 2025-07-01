@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>홈페이지 리뉴얼중</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        .logo {
-            margin-bottom: 30px;
-        }
-        .logo img {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-        }
-        .contact {
-            margin-top: 30px;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>제조사 안내 페이지</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .logo-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 30px 0 50px 0;
+    }
+    .logo-grid a img {
+      max-width: 180px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .logo-grid a:hover img {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    .contact {
+      font-size: 1em;
+      color: #444;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+    .intro {
+      background-color: #eee;
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      color: #444;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <!-- 🔗 로고 클릭 시 제조사 사이트로 이동 -->
-    <div class="logo">
-        <a href="https://www.lstbest.co.kr" target="_blank">
-            <img src="ci_logo.png" alt="LST CI">
-        </a>
+  <div class="container">
+    <h1>공식 제조사 안내 페이지</h1>
+    <p class="subtitle">저희는 글로벌 멸균 장비 제조사들의 국내 공식 파트너입니다.</p>
+
+    <div class="intro">
+      멸균기 및 생물안전장비 관련 제품 상담이 필요하시면 언제든지 문의주세요.<br>
+      아래 제조사 로고를 클릭하시면 공식 사이트로 연결됩니다.
     </div>
 
-    <h1>홈페이지 리뉴얼중입니다</h1>
-    <p>로고를 클릭하시면 제조사 사이트로 이동합니다.</p>
+    <div class="logo-grid">
+      <a href="https://sterile.com" target="_blank">
+        <img src="vai.png" alt="VAI">
+      </a>
+      <a href="https://girton.com" target="_blank">
+        <img src="girton.png" alt="Girton">
+      </a>
+      <a href="https://thoren.com" target="_blank">
+        <img src="thoren.png" alt="Thoren">
+      </a>
+      <a href="https://www.innovive.com" target="_blank">
+        <img src="innovive.png" alt="Innovive">
+      </a>
+    </div>
 
     <div class="contact">
-        <p><strong>제품 문의는 아래 연락처를 참조 부탁드립니다.</strong></p>
-        <p>E-mail : <a href="mailto:luckyst1@lstbest.co.kr">luckyst1@lstbest.co.kr</a></p>
-        <p>TEL : 032-623-0899</p>
-        <p>FAX : 032-623-0898</p>
+      📧 E-mail: <a href="mailto:luckyst1@lstbest.co.kr">luckyst1@lstbest.co.kr</a><br>
+      ☎ TEL: 032-623-0899&nbsp;&nbsp;&nbsp;&nbsp;📠 FAX: 032-623-0898
     </div>
+
+    <footer>
+      © 2025 LST Partners. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
