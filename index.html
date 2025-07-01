@@ -2,54 +2,76 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>파트너사 안내</title>
+  <title>제조사 안내</title>
   <style>
     body {
       font-family: 'Noto Sans KR', sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding-top: 80px;
     }
-    h2 {
+    .container {
+      padding: 60px 20px;
+    }
+    h1 {
       color: #333;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
-    .button-grid {
+    p.message {
+      font-size: 1.1em;
+      color: #444;
+      margin: 8px 0;
+    }
+    .logo-grid {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      justify-content: center;
+      gap: 40px;
+      margin: 50px 0;
     }
-    .link-button {
-      padding: 15px 25px;
-      font-size: 16px;
-      background-color: #007BFF;
-      color: #fff;
-      border: none;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+    .logo-grid a img {
+      max-width: 200px;
+      height: auto;
+      transition: transform 0.3s ease;
     }
-    .link-button:hover {
-      background-color: #0056b3;
+    .logo-grid a:hover img {
+      transform: scale(1.05);
     }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #888;
+    .contact {
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 50px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h2>제조사 링크 안내</h2>
-  <div class="button-grid">
-    <a class="link-button" href="https://sterile.com" target="_blank">VAI</a>
-    <a class="link-button" href="https://girton.com" target="_blank">Girton</a>
-    <a class="link-button" href="https://thoren.com" target="_blank">Thoren</a>
-    <a class="link-button" href="https://www.innovive.com" target="_blank">Innovive</a>
+  <div class="container">
+    <h1>홈페이지 리뉴얼 중입니다</h1>
+    <p class="message">로고를 클릭하시면 제조사 사이트로 이동합니다.</p>
+    <p class="message">제품 문의는 아래 연락처를 참조 부탁드립니다.</p>
+
+    <div class="logo-grid">
+      <a href="https://sterile.com" target="_blank">
+        <img src="vai.png" alt="VAI 로고">
+      </a>
+      <a href="https://girton.com" target="_blank">
+        <img src="girton.png" alt="Girton 로고">
+      </a>
+      <a href="https://thoren.com" target="_blank">
+        <img src="thoren.png" alt="Thoren 로고">
+      </a>
+      <a href="https://www.innovive.com" target="_blank">
+        <img src="innovive.png" alt="Innovive 로고">
+      </a>
+    </div>
+
+    <div class="contact">
+      📧 E-mail: <a href="mailto:luckyst1@lstbest.co.kr">luckyst1@lstbest.co.kr</a><br>
+      ☎ TEL: 032-623-0899<br>
+      📠 FAX: 032-623-0898
+    </div>
   </div>
-  <footer>
-    © 2025 상철님의 안내 페이지
-  </footer>
 </body>
 </html>
