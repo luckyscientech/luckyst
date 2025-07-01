@@ -36,21 +36,24 @@
     }
 
     .logo-img {
-      max-width: 180px;
       height: auto;
       transition: transform 0.3s ease;
     }
 
-    .scale-110 {
-      transform: scale(1.1);
+    .size-large {
+      width: 198px; /* +10% */
     }
 
-    .scale-0855 {
-      transform: scale(0.855);
+    .size-small {
+      width: 153px; /* -15% (10% + 추가 5%) */
+    }
+
+    .size-default {
+      width: 180px;
     }
 
     .logo-grid a:hover .logo-img {
-      transform: scale(1.05) !important;
+      transform: scale(1.05);
     }
 
     .contact {
@@ -72,16 +75,16 @@
 
     <div class="logo-grid">
       <a href="https://sterile.com" target="_blank">
-        <img src="Veltek_CI.png" alt="Veltek 공식 로고" class="logo-img scale-110">
+        <img src="Veltek_CI.png" alt="Veltek 공식 로고" class="logo-img size-large">
       </a>
       <a href="https://girton.com" target="_blank">
-        <img src="Girton_CI.png" alt="Girton 공식 로고" class="logo-img scale-110">
+        <img src="Girton_CI.png" alt="Girton 공식 로고" class="logo-img size-large">
       </a>
       <a href="https://thoren.com" target="_blank">
-        <img src="Thoren_CI.png" alt="Thoren 공식 로고" class="logo-img scale-0855">
+        <img src="Thoren_CI.png" alt="Thoren 공식 로고" class="logo-img size-small">
       </a>
       <a href="https://www.innovive.com" target="_blank">
-        <img src="innovive_CI.png" alt="Innovive 공식 로고" class="logo-img">
+        <img src="innovive_CI.png" alt="Innovive 공식 로고" class="logo-img size-default">
       </a>
     </div>
 
